@@ -20,5 +20,5 @@ streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index), ["Avocado", "Strawberries"])
 fruit_list_filtered = my_fruit_list.loc[fruits_selected]
 
-streamlit.dataframe(my_fruit_list)
+streamlit.dataframe(fruit_list_filtered)
 
